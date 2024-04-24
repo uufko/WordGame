@@ -5,10 +5,10 @@ import { Style } from './style'
 import UText from '../../atoms/uText/uText'
 import { UDevice } from '../../../assets/uMetarial/uDevice'
 
-const UBackImage = ({text}) => {
+const UBackImage = ({text,height,width}) => {
   return (
-    <View style={Style.viewStyle}>
-      <ImageBackground resizeMode="contain" style={Style.imageBackStyle} source={UImages.backImage}>
+    <View style={[Style.viewStyle,{height:height,width:width}]}>
+      <ImageBackground resizeMode="contain" style={[Style.imageBackStyle,{height:height,width:width}]} source={UImages.backImage}>
         <UText fontSize={UDevice.height*.035} text={text.toLocaleUpperCase()}/>
       </ImageBackground>
     </View>

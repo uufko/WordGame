@@ -3,7 +3,7 @@ import React from 'react'
 import { Style } from './style'
 import { UColors } from '../../../assets/uMetarial/uColors'
 import { useDispatch, useSelector } from 'react-redux'
-import { setInputValue } from '../../../redux/slice'
+import { setInputValue, setTrueFalseControl, setTrueFalseControlWithInput } from '../../../redux/slice'
 
 const UTextInput = () => {
   const {inputValue} = useSelector((state)=>state.answers)
@@ -15,6 +15,7 @@ const UTextInput = () => {
       placeholderTextColor={UColors.lightTextColor}
       value={inputValue}
       onChangeText={(e)=>{
+        dispatch(setTrueFalseControlWithInput())
         dispatch(setInputValue(e))}}
       style={Style.textInputStyle}/>
     </View>
