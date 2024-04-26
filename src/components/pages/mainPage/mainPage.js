@@ -1,17 +1,30 @@
-import { View, Text, Button, Image, TouchableOpacity } from 'react-native'
-import React from 'react'
+import { View, Text, Button, Image, TouchableOpacity, ImageBackground } from 'react-native'
+import React, { useEffect } from 'react'
 import QuestionPage from '../questionPage/questionPage'
 import { UImages } from '../../../assets/uImages/uImages'
 import UButton from '../../atoms/uButton/uButton'
+import Animated from 'react-native-reanimated'
+import { UseAnimatedShake } from '../../../../hooks/useAnimatedShake'
+import UPlayStore from '../../molecules/UPlayStore/uPlayStore'
+import { Style } from './style'
 
 const MainPage = ({navigation}) => {
+  const {rShakeStyle2,shake2} = UseAnimatedShake()
+  useEffect(()=>{
+    shake2()
+  })
   return (
-    <View>
-      <Image source={UImages.logo} resizeMode='contain' style={{height:400,width:400, alignSelf:"center"}}/>
-      <UButton text={"Başla"} onPress={()=>{
+    <ImageBackground source={UImages.background2} resizeMode="cover" style={[{flex:1,justifyContent:"space-between"}]}>
+      <Animated.Image source={UImages.logo} resizeMode='contain' style={[rShakeStyle2,Style.backgroundImage]}/>
+      <View style={Style.view}>
+      <UButton text={"Başla"} backgroundColor='#06aac2' onPress={()=>{
         navigation.navigate(QuestionPage)
       }}/>
-    </View>
+      </View>
+      
+      <UPlayStore/>
+      
+    </ImageBackground>
   )
 }
 

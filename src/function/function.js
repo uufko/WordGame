@@ -24,10 +24,10 @@ export const uFunction = () => {
                 return UDevice.height * 0.072;
                 break;
             case 9:
-                return UDevice.height * 0.062;
+                return UDevice.height * 0.065;
                 break;
             case 10:
-                return UDevice.height * 0.059;
+                return UDevice.height * 0.06;
                 break;
         }
     };
@@ -50,10 +50,10 @@ export const uFunction = () => {
                 return UDevice.height * 0.062;
                 break;
             case 9:
-                return UDevice.height * 0.052;
+                return UDevice.height * 0.055;
                 break;
             case 10:
-                return UDevice.height * 0.047;
+                return UDevice.height * 0.05;
                 break;
         }
     };

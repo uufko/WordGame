@@ -14,10 +14,28 @@ export const UseAnimatedShake = () => {
         )
     }, [])
 
+
+    const shake2 = useCallback(() => {
+        const TranslationAmount = 10
+        const timingConfig = {duration: 1500}
+        shakeTranslateX.value = withSequence(
+            withTiming(TranslationAmount, timingConfig),
+            withRepeat(withTiming(-TranslationAmount, timingConfig), 10, true),
+            withSpring(0, {mass: 0.5}),
+            withTiming(0)
+        )
+    }, [])
+
     const rShakeStyle = useAnimatedStyle(() => {
         return {
             transform: [{ translateX: shakeTranslateX.value}]
         }
     })
-    return {shake , rShakeStyle}
+
+    const rShakeStyle2 = useAnimatedStyle(() => {
+        return {
+            transform: [{  translateX:shakeTranslateX.value}]
+        }
+    })
+    return {shake , rShakeStyle,shake2,rShakeStyle2}
 }

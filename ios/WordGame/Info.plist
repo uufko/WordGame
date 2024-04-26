@@ -50,6 +50,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>bont.otf</string>
+		<string>OpenSans-Italic.ttf</string>
 	</array>
 </dict>
 </plist>

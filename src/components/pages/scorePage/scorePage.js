@@ -15,7 +15,7 @@ const ScorePage = () => {
   return (
     <View style={{flex:1, justifyContent:"center", alignItems:"center"}}>
       <Text style={{color:UColors.lightTextColor,fontSize:UDevice.size, fontFamily:"bont"}}>{totalScore}</Text>
-      <UButton text={"Ana Sayfa"} onPress={()=>{navigation.navigate(MainPage),dispath(refreshOrder())}}/>
+      <UButton backgroundColor='#06aac2' text={"Ana Sayfa"} onPress={()=>{navigation.navigate(MainPage),dispath(refreshOrder())}}/>
     </View>
   )
 }

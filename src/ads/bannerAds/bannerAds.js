@@ -7,7 +7,7 @@ const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-9042490279958793/5958422
 
 export const BannerAds = () => {
   return (
-    <View style={{alignItems:"center", justifyContent:"flex-end",height:UDevice.height*.3}}>
+    <View style={{alignItems:"center", justifyContent:"flex-end",height:UDevice.height*.315}}>
       <BannerAd
         size={BannerAdSize.LARGE_BANNER}
         unitId={adUnitId}

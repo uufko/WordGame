@@ -1,4 +1,4 @@
-package com.wordgame
+package com.uwordsgame
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

@@ -4,6 +4,10 @@
     {
       "path": "src/assets/uFonts/bont.otf",
       "sha1": "d85972f0c98a49fa10945f2ffe4894098acd6b0a"
+    },
+    {
+      "path": "src/assets/uFonts/OpenSans-Italic.ttf",
+      "sha1": "43a44c258e7a4527130a6ccf1cc948324a1b620d"
     }
   ]
 }

@@ -172,39 +172,32 @@ const AnswerSlice = createSlice({
         setRandomNumber(state, data) {
             switch (state.order) {
                 case 4:
-                    console.log(Object.keys(UDatas.Word4).length);
                     state.randomNumber = Math.floor(Math.random() * Object.keys(UDatas.Word4).length);
-                    console.log("randomNumber",state.randomNumber);
+                    
                     break;
                 case 5:
-                    console.log(Object.keys(UDatas.Word5).length);
                     state.randomNumber = Math.floor(Math.random() * Object.keys(UDatas.Word5).length);
-                    console.log("randomNumber",state.randomNumber);
+                    
                     break;
                 case 6:
-                    console.log(Object.keys(UDatas.Word6).length);
                     state.randomNumber = Math.floor(Math.random() * Object.keys(UDatas.Word6).length);
-                    console.log("randomNumber",state.randomNumber);
+                    
                     break;
                 case 7:
-                    console.log(Object.keys(UDatas.Word7).length);
                     state.randomNumber = Math.floor(Math.random() * Object.keys(UDatas.Word7).length);
-                    console.log("randomNumber",state.randomNumber);
+                    
                     break;
                 case 8:
-                    console.log(Object.keys(UDatas.Word8).length);
                     state.randomNumber = Math.floor(Math.random() * Object.keys(UDatas.Word8).length);
-                    console.log("randomNumber",state.randomNumber);
+                    
                     break;
                 case 9:
-                    console.log(Object.keys(UDatas.Word9).length);
                     state.randomNumber = Math.floor(Math.random() * Object.keys(UDatas.Word9).length);
-                    console.log("randomNumber",state.randomNumber);
+                    
                     break;
                 case 10:
-                    console.log(Object.keys(UDatas.Word10).length);
                     state.randomNumber = Math.floor(Math.random() * Object.keys(UDatas.Word10).length);
-                    console.log("randomNumber",state.randomNumber);
+                    
                     break;
             }
             

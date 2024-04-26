@@ -15,6 +15,7 @@
 		7699B88040F8A987B510C191 /* libPods-WordGame-WordGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-WordGame-WordGameTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		007762F4174A41EF8686D11C /* bont.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2B340EB4ADEE416A8D9411C4 /* bont.otf */; };
+		DBB7AC7BBDF6474181A8552C /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E3AE62D96F2480E944468FE /* OpenSans-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-WordGame-WordGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordGame-WordGameTests.release.xcconfig"; path = "Target Support Files/Pods-WordGame-WordGameTests/Pods-WordGame-WordGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		2B340EB4ADEE416A8D9411C4 /* bont.otf */ = {isa = PBXFileReference; name = "bont.otf"; path = "../src/assets/uFonts/bont.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E3AE62D96F2480E944468FE /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; name = "OpenSans-Italic.ttf"; path = "../src/assets/uFonts/OpenSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = "PBXGroup";
 			children = (
 				2B340EB4ADEE416A8D9411C4 /* bont.otf */,
+				4E3AE62D96F2480E944468FE /* OpenSans-Italic.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				007762F4174A41EF8686D11C /* bont.otf in Resources */,
+				DBB7AC7BBDF6474181A8552C /* OpenSans-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ const UPointArea = ({}) => {
       <View style={[Style.viewStyle, {}]}>
         <UText fontSize={UDevice.height * .02} text={score} />
       </View>
-      <UButton text={"Harf Al"} onPress={control = () => {
+      <UButton backgroundColor='#06aac2' text={"Harf Al"} onPress={control = () => {
         if (score == 0) {
         } else {
           let random = Math.floor(Math.random() * answer.length)

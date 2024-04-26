@@ -13,6 +13,7 @@ import { UDatas } from '../../../assets/uMetarial/uDatas'
 const QuestionPage = () => {
   const { order } = useSelector((state) => state.answers)
   const dispatch = useDispatch()
+  
   useEffect(() => {
     dispatch(setRandomNumber())
     dispatch(changeAnswer())
